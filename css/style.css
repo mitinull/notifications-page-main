@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "jakarta";
+  src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "jakarta", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  background-color: white;
+  max-width: 700px;
+  padding: 4.3%;
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #15181f;
+}
+.header .number {
+  background-color: #06357b;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.header #mark-as-read {
+  flex: 1;
+  text-align: right;
+}
+.header #mark-as-read span {
+  cursor: pointer;
+  color: #585b62;
+}
+.header #mark-as-read span:hover {
+  color: #183376;
+}
+
+.notification {
+  background-color: #f6fafd;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  padding: 1.4em;
+  cursor: pointer;
+}
+.notification img {
+  width: 3em;
+  height: 3em;
+  margin-right: 1.4em;
+}
+.notification .picture {
+  flex: 1;
+  text-align: right;
+}
+.notification .picture img {
+  margin: 2px;
+  margin-left: 10px;
+}
+.notification .picture img:hover {
+  border-radius: 7px;
+  border: 2px solid #f0f1f6;
+  margin:0;
+  margin-left: 10px;
+}
+.notification .text {
+  color: #585b62;
+}
+.notification .text b {
+  color: #15181f;
+  cursor: pointer;
+  margin-right: 3px;
+}
+.notification .text strong {
+  cursor: pointer;
+}
+strong.group-name,
+.notification .text b:hover,
+.notification .text strong:hover {
+  color: #183376;
+}
+.notification .circle {
+  background-color: #ff4d49;
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+.notification .time {
+  color: #9599a2;
+}
+.notification .message {
+  padding: 1.4em;
+  border: 1px solid #e5eff9;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.notification .message:hover {
+  background-color: #e5eff9;
+}
+.notification.read {
+  background-color: transparent;
+}
+.notification.read .circle {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    border-radius: 0;
+  }
+  .header {
+    margin-bottom: 25px;
+  }
+}
